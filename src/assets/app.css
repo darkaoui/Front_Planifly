@@ -1,0 +1,12 @@
+* {
+    font-family: Georgia, sans-serif;
+}
+input {
+    border-radius: 50px;
+    border: 2px solid skyblue;
+    padding: 10px;
+}
+
+h1 {
+    color: #1b4b65
+}

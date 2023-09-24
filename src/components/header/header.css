@@ -1,0 +1,26 @@
+a {
+    margin: 20px;;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: #CAEBFF;
+}
+
+img{
+    width: 50px;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button_logout, .button_profil {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

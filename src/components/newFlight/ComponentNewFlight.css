@@ -1,0 +1,11 @@
+.form_new_flight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.component_new_flight {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
