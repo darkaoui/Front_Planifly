@@ -1,0 +1,11 @@
+.buttonSign {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.componentLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

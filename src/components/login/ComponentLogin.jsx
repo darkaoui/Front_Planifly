@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import './ComponentLogin.css'
 
 function ComponentLogin() {
     const [email,setEmail] = useState('')
@@ -27,14 +28,14 @@ function ComponentLogin() {
         navigate('/sign')
     }
   return (
-    <div>
+    <div className='componentLogin'>
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder='Email' value={email} onChange={e=>setEmail(e.target.value)}/>
             <input type="password" placeholder='Password' value={password} onChange={e=>setPassword(e.target.value)}/>
             <button type='submit'>Validate</button>
         </form>
-        <button onClick={handleSignButton}>Sign</button>
+        <button className="buttonSign" onClick={handleSignButton}>Sign</button>
     </div>
   )
 }

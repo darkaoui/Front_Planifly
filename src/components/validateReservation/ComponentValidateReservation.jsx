@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import './ComponentValidateReservation.css'
 
 function ComponentValidateReservation({flight,user}) {
   const [validSeats,setValidSeats] = useState(0)
@@ -33,12 +34,14 @@ function ComponentValidateReservation({flight,user}) {
         (<div>
           <h1>Book flight : {flight}</h1>
           <form onSubmit={handleValidation}>
-            <input type="number" placeholder='Valid seats quantity' value={validSeats} onChange={(e)=> setValidSeats(e.target.value)}/>
-            <input type="number" placeholder='Disabled seats quantity' value={disableSeats} onChange={(e)=> setDisableSeats(e.target.value)}/>
+            <label>Valid seats quantity</label>
+            <input type="number" value={validSeats} onChange={(e)=> setValidSeats(e.target.value)}/>
+            <label>Disabled seats quantity</label>
+            <input type="number" value={disableSeats} onChange={(e)=> setDisableSeats(e.target.value)}/>
             <button type='submit'>Validate</button>
           </form>
         </div>)
-        :(<div>
+        :(<div className='bookFinished'>
           <h1>Thank you, your reservation is done !</h1>
           <button onClick={() => navigate('/')}>Go back to home page</button>
         </div>)

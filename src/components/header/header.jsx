@@ -28,7 +28,7 @@ const Header = () => {
   return (
 	  <div className='header'>
       <a href='/' className='header_logo'><img src={logo} alt="Logo"/></a>
-      <div className='header_left'>
+      <div className='header_right'>
         {
           user
           && JSON.parse(user) !== null

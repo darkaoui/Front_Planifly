@@ -3,6 +3,8 @@ a {
 }
 
 .header {
+    position: fixed;
+    top: 0px;
     width: 100%;
     display: flex;
     justify-content:space-between;
@@ -13,10 +15,11 @@ img{
     width: 50px;
 }
 
-.header_left {
+.header_right {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-right: 50px;
 }
 
 .button_logout, .button_profil {
